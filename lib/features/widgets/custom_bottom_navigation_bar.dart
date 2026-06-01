@@ -19,16 +19,19 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       width: context.width * .6,
       decoration: BoxDecoration(
         color: context.color.secondary,
-        borderRadius: BorderRadius.circular(AppSizes.kradiusXl),
+        borderRadius: BorderRadius.circular(AppSizes.kspace32),
       ),
       child: Padding(
         padding: const EdgeInsets.all(AppSizes.kspace5),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(
             iconlist.length,
             (index) => GestureDetector(
               onTap: () {
-                tracker = index;
+                setState(() {
+                  tracker = index;
+                });
               },
               child: AnimatedScale(
                 scale: tracker == index ? 1.15 : 1,

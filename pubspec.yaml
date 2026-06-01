@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.3.0
   gap: ^3.0.1
   iconsax: ^0.0.8
+  action_slider: ^0.7.0
 
 dev_dependencies:
   flutter_test:

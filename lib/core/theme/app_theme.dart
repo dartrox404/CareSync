@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static final ThemeData customtheme = ThemeData(
     colorScheme: ColorScheme.dark(
-      primary: Colors.white,
-
+      primary: Color(0xffcfdfe8),
       secondary: Color(0xff1A1A1A),
-      tertiary: Color(0xffAAAAAA),
+      surface: Color(0xff171926),
+      tertiary: Color(0xff808494),
+      onTertiary: Color(0xff5e6570),
+      onPrimary: Color(0xff808494),
+      onSecondary: Color(0xff7a97a2),
     ),
     textTheme: TextTheme(
       displayLarge: TextStyle(
