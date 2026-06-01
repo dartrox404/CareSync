@@ -37,6 +37,7 @@ dependencies:
   go_router: ^17.2.3
   flutter_svg: ^2.3.0
   gap: ^3.0.1
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
