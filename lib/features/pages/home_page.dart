@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsetsGeometry.symmetric(
-            vertical: AppSizes.kspace10,
+            vertical: AppSizes.kspace5,
             horizontal: AppSizes.kspace12,
           ),
           child: Column(
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
               const Gap(AppSizes.kspace20),
               Expanded(
                 child: ListView.builder(
-                  physics: AlwaysScrollableScrollPhysics(),
+                  physics: BouncingScrollPhysics(),
                   itemCount: healthcardlist.length,
                   itemBuilder: (BuildContext context, int index) {
                     return HomepageCard(

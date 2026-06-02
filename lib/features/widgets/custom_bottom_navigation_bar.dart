@@ -3,16 +3,15 @@ import 'package:care_sync/core/extensions/app_extensions.dart';
 import 'package:care_sync/data/model/iconlist.dart';
 import 'package:flutter/material.dart';
 
-class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({super.key});
+class CustomBottomNavigationBar extends StatelessWidget {
+  const CustomBottomNavigationBar({
+    super.key,
+    required this.ontap,
+    required this.tracker,
+  });
+  final int tracker;
+  final Function(int) ontap;
 
-  @override
-  State<CustomBottomNavigationBar> createState() =>
-      _CustomBottomNavigationBarState();
-}
-
-class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-  int tracker = 0;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,11 +27,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           children: List.generate(
             iconlist.length,
             (index) => GestureDetector(
-              onTap: () {
-                setState(() {
-                  tracker = index;
-                });
-              },
+              onTap: () => ontap(index),
               child: AnimatedScale(
                 scale: tracker == index ? 1.15 : 1,
                 duration: const Duration(milliseconds: 300),

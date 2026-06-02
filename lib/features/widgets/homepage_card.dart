@@ -63,19 +63,17 @@ class HomepageCard extends StatelessWidget {
                               fontFamily: 'poppins',
                             ),
                           ),
-                          TextSpan(
-                            text: 'k',
-                            style: context.text.bodySmall?.copyWith(
-                              fontFamily: 'poppins',
-                            ),
-                          ),
                         ],
                       ),
                     ),
                   ),
                 ),
                 Spacer(),
-                Icon(Icons.arrow_outward, size: AppSizes.kspace32),
+                Icon(
+                  Icons.arrow_outward,
+                  size: AppSizes.kspace32,
+                  color: context.color.secondary,
+                ),
               ],
             ),
             Text(

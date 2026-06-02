@@ -85,11 +85,6 @@ class OnboardingPage extends StatelessWidget {
               ),
             ),
             Positioned(left: 10, bottom: 90, child: OnboardMainCard()),
-            Positioned(
-              bottom: 20,
-              left: 65,
-              child: CustomBottomNavigationBar(),
-            ),
           ],
         ),
       ),
