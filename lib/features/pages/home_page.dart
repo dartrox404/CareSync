@@ -1,4 +1,3 @@
-import 'package:action_slider/action_slider.dart';
 import 'package:care_sync/core/const/app_sizes.dart';
 import 'package:care_sync/core/extensions/app_extensions.dart';
 import 'package:care_sync/data/model/colorlist.dart';

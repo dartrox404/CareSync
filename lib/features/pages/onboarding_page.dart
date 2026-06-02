@@ -1,5 +1,4 @@
 import 'package:care_sync/core/extensions/app_extensions.dart';
-import 'package:care_sync/features/widgets/custom_bottom_navigation_bar.dart';
 import 'package:care_sync/features/widgets/onboard_main_card.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';

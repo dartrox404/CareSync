@@ -1,6 +1,9 @@
 import 'package:care_sync/core/const/app_sizes.dart';
 import 'package:care_sync/core/extensions/app_extensions.dart';
+import 'package:care_sync/features/widgets/report_page_card.dart';
+import 'package:care_sync/features/widgets/report_page_category.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,6 +18,8 @@ class ReportPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -61,7 +66,24 @@ class ReportPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const Gap(AppSizes.kspace24),
+              Spacer(),
+              Column(
+                children: [
+                  const Gap(AppSizes.kspace24),
+                  const ReportPageCard(),
+                  const Gap(AppSizes.kspace16),
+                  Text(
+                    'Checkups',
+                    style: context.text.titleLarge?.copyWith(
+                      fontFamily: 'poppins',
+                      color: context.color.secondary,
+                    ),
+                  ),
+                  const Gap(AppSizes.kspace16),
+                  const ReportPageCategory(),
+                ],
+              ),
+              Spacer(),
             ],
           ),
         ),

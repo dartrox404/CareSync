@@ -8,12 +8,9 @@ class ReportPageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: context.height * .25,
-      decoration: BoxDecoration(
-        border: Border.all(color: context.color.secondary),
-      ),
       child: Stack(
         children: [
           Padding(
@@ -54,9 +51,9 @@ class ReportPageCard extends StatelessWidget {
                         ),
                         Text(
                           'Arsin Lupin',
-                          style: context.text.bodyMedium?.copyWith(
+                          style: context.text.bodySmall?.copyWith(
                             fontFamily: 'poppins',
-                            color: context.color.secondary,
+                            color: context.color.tertiary,
                           ),
                         ),
                       ],
