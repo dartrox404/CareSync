@@ -28,7 +28,7 @@ class _IntroPageState extends State<IntroPage> {
           pages[tracker],
           Positioned(
             left: 65,
-            bottom: 25,
+            bottom: 20,
             child: CustomBottomNavigationBar(
               ontap: (index) {
                 setState(() {
