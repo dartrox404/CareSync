@@ -3,7 +3,6 @@ import 'package:care_sync/core/extensions/app_extensions.dart';
 import 'package:care_sync/features/widgets/report_page_card.dart';
 import 'package:care_sync/features/widgets/report_page_category.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:iconsax/iconsax.dart';
 
